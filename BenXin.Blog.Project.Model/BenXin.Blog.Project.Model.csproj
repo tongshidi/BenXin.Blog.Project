@@ -4,11 +4,19 @@
     <TargetFramework>net5.0</TargetFramework>
   </PropertyGroup>
 
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <DocumentationFile>C:\Users\76871\Desktop\BenXin.Blog.Project(1)\BenXin.Blog.Project\BenXin.Blog.Project.Model\BenXin.Blog.Project.Model.xml</DocumentationFile>
+  </PropertyGroup>
+
   <ItemGroup>
     <Folder Include="Dto\Api\" />
     <Folder Include="Dto\Request\" />
     <Folder Include="Dto\Reponse\" />
     <Folder Include="Entities\Base\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\BenXin.Blog.Project.Common\BenXin.Blog.Project.Common.csproj" />
   </ItemGroup>
 
 </Project>

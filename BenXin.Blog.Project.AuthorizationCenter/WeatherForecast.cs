@@ -1,6 +1,6 @@
 using System;
 
-namespace BenXin.Blog.Project
+namespace BenXin.Blog.Project.AuthorizationCenter
 {
     public class WeatherForecast
     {
