@@ -1,0 +1,12 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\BenXin.Blog.Project.IRepository\BenXin.Blog.Project.IRepository.csproj" />
+    <ProjectReference Include="..\BenXin.Blog.Project.IService\BenXin.Blog.Project.IService.csproj" />
+  </ItemGroup>
+
+</Project>

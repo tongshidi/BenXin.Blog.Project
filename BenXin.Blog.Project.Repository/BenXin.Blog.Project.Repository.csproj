@@ -1,0 +1,15 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="BaseRepository.cs~RF304d6bd.TMP" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\BenXin.Blog.Project.IRepository\BenXin.Blog.Project.IRepository.csproj" />
+  </ItemGroup>
+
+</Project>
