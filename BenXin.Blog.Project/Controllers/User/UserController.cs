@@ -13,17 +13,17 @@ namespace BenXin.Blog.Project.Web.Controllers
     [ApiController]
     public class UserController : BaseController
     {
-        //private IBaseService _userService { get; set; }
+        private IUserService _userService = null;
 
-        //public UserController(IUserService userService)
-        //{
-        //    _userService = userService;
-        //}
+        public UserController(IUserService userService)
+        {
+            _userService = userService;
+        }
 
         [HttpGet]
         public async Task<ResponeResult<string>> GetUserToken()
         {
-            return new ResponeResult<string>();
+            return await _userService.GetUserToken(1);
         }
     }
 }

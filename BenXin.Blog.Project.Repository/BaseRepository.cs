@@ -1199,16 +1199,6 @@ namespace BenXin.Blog.Project.Repository
               : DbBaseClient.Queryable<T>().WhereIF(predicate != null, predicate).First();
         }
 
-        public T QueryById(int pkValue, bool blUseNoLock = false)
-        {
-            throw new NotImplementedException();
-        }
-
-        public Task<T> QueryByIdAsync(int objId, bool blUseNoLock = false)
-        {
-            throw new NotImplementedException();
-        }
-
         /// <summary>
         ///     根据主值列表查询单条数据
         /// </summary>

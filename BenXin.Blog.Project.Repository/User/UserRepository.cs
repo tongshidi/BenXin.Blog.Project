@@ -24,10 +24,17 @@ namespace BenXin.Blog.Project.Repository.User
         /// <returns></returns>
         public async Task<ResponeResult<string>> GetUserToken(int id)
         {
-            var model = await QueryByIdAsync(id);
-            var result = new ResponeResult<string>() { data="获取到token",result_code=Model.Enum.Common.ResponeStatus.Success,result_msg=""};
-            
-            return result;
+            try
+            {
+                var model = await QueryByIdAsync(id);
+                var result = new ResponeResult<string>() { data = "获取到token", result_code = Model.Enum.Common.ResponeStatus.Success, result_msg = "" };
+
+                return result;
+            }
+            catch (Exception ex)
+            {
+                throw new Exception(ex.ToString());
+            }
             
         }
     }

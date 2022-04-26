@@ -11,6 +11,18 @@ namespace BenXin.Blog.Project.Common.Config
     /// </summary>
     public class AppSettingsConstVars
     {
+        #region 数据库字符串
+        /// <summary>
+        /// 数据库链接字符串
+        /// </summary>
+        public static readonly string DbSqlConnection = AppSettingsHelper.GetContent("ConnectionStrings", "SqlConnection");
+        /// <summary>
+        /// 获取数据库类型
+        /// </summary>
+        public static readonly string DbDbType = AppSettingsHelper.GetContent("ConnectionStrings", "DbType");
+
+        #endregion
+
         #region 跨域配置
 
         public static readonly string CorsPolicyName = AppSettingsHelper.GetContent("Cors", "PolicyName");

@@ -28,14 +28,14 @@ namespace BenXin.Blog.Project.AutoFac
             //获取 Service.dll 程序集服务，并注册
             var assemblysService = Assembly.LoadFrom(sericesDLLFile);
             //支持属性注入
-            builder.RegisterAssemblyTypes(assemblysService).AsImplementedInterfaces().InstancePerDependency()
-                .PropertiesAutowired(PropertyWiringOptions.AllowCircularDependencies);
+            builder.RegisterAssemblyTypes(assemblysService).Where(t => t.Name.EndsWith("Service")).AsImplementedInterfaces();
 
             //获取 Repository.dll 程序集服务，并注册
             var assemblysRepository = Assembly.LoadFrom(repositoryFile);
             //支持属性注入
-            builder.RegisterAssemblyTypes(assemblysRepository).AsImplementedInterfaces().InstancePerDependency()
-                .PropertiesAutowired(PropertyWiringOptions.AllowCircularDependencies);
+            builder.RegisterAssemblyTypes(assemblysRepository).Where(t => t.Name.EndsWith("Repository")).AsImplementedInterfaces();
+
+            builder.RegisterAssemblyTypes(assemblysRepository).Where(t => t.Name.EndsWith("UnitOfWork")).AsImplementedInterfaces();
 
             #endregion
         }

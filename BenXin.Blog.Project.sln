@@ -33,9 +33,9 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Repository", "Repository", 
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Service", "Service", "{3D9EF3E2-1B2E-424F-AECD-17FEC9BD5610}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BenXin.Blog.Project.AuthorizationCenter", "BenXin.Blog.Project.AuthorizationCenter\BenXin.Blog.Project.AuthorizationCenter.csproj", "{86047D63-9D8A-4E81-AA4C-D60C66178765}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BenXin.Blog.Project.AuthorizationCenter", "BenXin.Blog.Project.AuthorizationCenter\BenXin.Blog.Project.AuthorizationCenter.csproj", "{86047D63-9D8A-4E81-AA4C-D60C66178765}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BenXin.Blog.Project.AutoFac", "BenXin.Blog.Project.AutoFac\BenXin.Blog.Project.AutoFac.csproj", "{731C6816-4EF7-48CF-9E19-5E1358B0B44E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BenXin.Blog.Project.AutoFac", "BenXin.Blog.Project.AutoFac\BenXin.Blog.Project.AutoFac.csproj", "{731C6816-4EF7-48CF-9E19-5E1358B0B44E}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "服务", "服务", "{E4887547-A910-44E5-8CE0-3CD8B535C18A}"
 EndProject
