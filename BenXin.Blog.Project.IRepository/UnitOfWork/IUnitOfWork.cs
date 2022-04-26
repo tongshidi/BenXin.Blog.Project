@@ -7,14 +7,14 @@ using System.Threading.Tasks;
 
 namespace BenXin.Blog.Project.IRepository.UnitOfWork
 {
-    public interface IUnitOfWork
-    {
-        SqlSugarScope GetDbClient();
+  public interface IUnitOfWork
+  {
+    SqlSugarScope GetDbClient();
 
-        void BeginTran();
+    void BeginTran();
 
-        void CommitTran();
+    void CommitTran();
 
-        void RollbackTran();
-    }
+    void RollbackTran();
+  }
 }

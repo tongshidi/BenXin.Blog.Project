@@ -9,6 +9,11 @@
   </ItemGroup>
 
   <ItemGroup>
+    <PackageReference Include="Newtonsoft.Json" Version="10.0.0" />
+    <PackageReference Include="SqlSugar.IOC" Version="1.8.0" />
+  </ItemGroup>
+
+  <ItemGroup>
     <ProjectReference Include="..\BenXin.Blog.Project.IRepository\BenXin.Blog.Project.IRepository.csproj" />
   </ItemGroup>
 

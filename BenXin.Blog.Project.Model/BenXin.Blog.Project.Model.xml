@@ -4,6 +4,101 @@
         <name>BenXin.Blog.Project.Model</name>
     </assembly>
     <members>
+        <member name="T:BenXin.Blog.Project.Model.Entities.User.UserModel">
+            <summary>
+            用户表
+            </summary>
+        </member>
+        <member name="M:BenXin.Blog.Project.Model.Entities.User.UserModel.#ctor">
+            <summary>
+            用户表
+            </summary>
+        </member>
+        <member name="P:BenXin.Blog.Project.Model.Entities.User.UserModel.id">
+            <summary>
+            用户ID
+            </summary>
+        </member>
+        <member name="P:BenXin.Blog.Project.Model.Entities.User.UserModel.userName">
+            <summary>
+            用户名
+            </summary>
+        </member>
+        <member name="P:BenXin.Blog.Project.Model.Entities.User.UserModel.passWord">
+            <summary>
+            密码
+            </summary>
+        </member>
+        <member name="P:BenXin.Blog.Project.Model.Entities.User.UserModel.mobile">
+            <summary>
+            手机号
+            </summary>
+        </member>
+        <member name="P:BenXin.Blog.Project.Model.Entities.User.UserModel.sex">
+            <summary>
+            性别[1男2女3未知]
+            </summary>
+        </member>
+        <member name="P:BenXin.Blog.Project.Model.Entities.User.UserModel.birthday">
+            <summary>
+            生日
+            </summary>
+        </member>
+        <member name="P:BenXin.Blog.Project.Model.Entities.User.UserModel.avatarImage">
+            <summary>
+            头像
+            </summary>
+        </member>
+        <member name="P:BenXin.Blog.Project.Model.Entities.User.UserModel.nickName">
+            <summary>
+            昵称
+            </summary>
+        </member>
+        <member name="P:BenXin.Blog.Project.Model.Entities.User.UserModel.balance">
+            <summary>
+            余额
+            </summary>
+        </member>
+        <member name="P:BenXin.Blog.Project.Model.Entities.User.UserModel.point">
+            <summary>
+            积分
+            </summary>
+        </member>
+        <member name="P:BenXin.Blog.Project.Model.Entities.User.UserModel.grade">
+            <summary>
+            用户等级
+            </summary>
+        </member>
+        <member name="P:BenXin.Blog.Project.Model.Entities.User.UserModel.createTime">
+            <summary>
+            创建时间
+            </summary>
+        </member>
+        <member name="P:BenXin.Blog.Project.Model.Entities.User.UserModel.updataTime">
+            <summary>
+            更新时间
+            </summary>
+        </member>
+        <member name="P:BenXin.Blog.Project.Model.Entities.User.UserModel.status">
+            <summary>
+            状态[1正常2停用]
+            </summary>
+        </member>
+        <member name="P:BenXin.Blog.Project.Model.Entities.User.UserModel.parentId">
+            <summary>
+            推荐人
+            </summary>
+        </member>
+        <member name="P:BenXin.Blog.Project.Model.Entities.User.UserModel.userWx">
+            <summary>
+            关联三方账户
+            </summary>
+        </member>
+        <member name="P:BenXin.Blog.Project.Model.Entities.User.UserModel.isDelete">
+            <summary>
+            删除标志 有数据就是删除
+            </summary>
+        </member>
         <member name="T:BenXin.Blog.Project.Model.Enum.Common.ResponeStatus">
             <summary>
             返回枚举

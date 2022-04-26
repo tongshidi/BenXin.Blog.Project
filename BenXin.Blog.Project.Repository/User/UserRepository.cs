@@ -12,7 +12,7 @@ namespace BenXin.Blog.Project.Repository.User
 {
     public class UserRepository : BaseRepository<UserModel>, IUserRepository
     {
-        protected UserRepository(IUnitOfWork unitOfWork):base(unitOfWork)
+        public UserRepository(IUnitOfWork unitOfWork):base(unitOfWork)
         {
             
         }
@@ -35,6 +35,7 @@ namespace BenXin.Blog.Project.Repository.User
             {
                 throw new Exception(ex.ToString());
             }
+            
             
         }
     }

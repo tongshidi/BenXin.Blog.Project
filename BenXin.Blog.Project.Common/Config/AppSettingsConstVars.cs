@@ -19,7 +19,7 @@ namespace BenXin.Blog.Project.Common.Config
         /// <summary>
         /// 获取数据库类型
         /// </summary>
-        public static readonly string DbDbType = AppSettingsHelper.GetContent("ConnectionStrings", "DbType");
+        public static readonly string SqlType = AppSettingsHelper.GetContent("ConnectionStrings", "SqlType");
 
         #endregion
 

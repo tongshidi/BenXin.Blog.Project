@@ -30,7 +30,11 @@ namespace BenXin.Blog.Project.Service
         /// <returns></returns>
         public async Task<ResponeResult<string>> GetUserToken(int id)
         {
-            return await _userRepository.GetUserToken(id);
+            var result = await _userRepository.GetUserToken(id);
+            result.data = null;
+            result.result_code = Model.Enum.Common.ResponeStatus.Success;
+            result.result_msg = "«Î«Û≥…π¶";
+            return result;
         }
     }
 }

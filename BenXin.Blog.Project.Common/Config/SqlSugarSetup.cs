@@ -21,7 +21,7 @@ namespace BenXin.Blog.Project.Common.Config
                 //数据库链接
                 ConnectionString = AppSettingsConstVars.DbSqlConnection,
                 //数据库支持的类型
-                DbType = AppSettingsConstVars.DbDbType == IocDbType.MySql.ToString() ? IocDbType.MySql : IocDbType.SqlServer,
+                DbType = AppSettingsConstVars.SqlType == IocDbType.MySql.ToString() ? IocDbType.MySql : IocDbType.SqlServer,
                 //是否开启自动关闭数据库链接
                 IsAutoCloseConnection = true
             });
